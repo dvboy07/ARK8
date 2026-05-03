@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Monitor, Cpu, Gamepad2, Coffee, ChevronRight, Instagram, MapPin, Clock } from "lucide-react";
+import { Monitor, Cpu, Gamepad2, Coffee, ChevronRight, Instagram, MapPin, Clock, HardDrive, MemoryStick, Keyboard, MousePointer2, Wifi, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Arsenal", href: "#arsenal" },
+  { label: "PC Specs", href: "#specs" },
   { label: "Pricing", href: "#pricing" },
 ];
 
@@ -231,6 +232,129 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm leading-relaxed relative z-10">{feature.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PC Specs */}
+      <section id="specs" className="py-24 relative bg-background">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,154,254,0.06)_0%,transparent_50%)]" />
+        <div className="container px-4 md:px-6 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">PC <span className="text-[#009AFE]">Specs</span></h2>
+            <p className="text-lg text-muted-foreground">Every rig is built for one purpose — maximum competitive performance.</p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Hardware Specs */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6 }}
+              className="rounded-2xl bg-card border border-border/50 overflow-hidden"
+            >
+              <div className="px-6 py-4 border-b border-border/50 bg-[#009AFE]/5">
+                <h3 className="text-lg font-bold text-white uppercase tracking-widest">Hardware</h3>
+              </div>
+              <ul className="divide-y divide-border/40" data-testid="specs-hardware-list">
+                {[
+                  { icon: <Cpu className="h-4 w-4" />, label: "CPU", value: "Intel Core i5-14400F" },
+                  { icon: <Monitor className="h-4 w-4" />, label: "GPU", value: "Nvidia RTX 3070 Ti" },
+                  { icon: <MemoryStick className="h-4 w-4" />, label: "RAM", value: "16GB DDR5 6000MHz" },
+                  { icon: <HardDrive className="h-4 w-4" />, label: "Storage", value: "1TB Gen4 NVMe SSD" },
+                  { icon: <Monitor className="h-4 w-4" />, label: "Display", value: "320Hz Acer Monitor" },
+                  { icon: <Keyboard className="h-4 w-4" />, label: "Keyboard", value: "Mechanical Keyboard" },
+                  { icon: <MousePointer2 className="h-4 w-4" />, label: "Mouse", value: "Razer DeathAdder Essential / Viper 8KHz" },
+                ].map((spec, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.06 }}
+                    className="flex items-center justify-between px-6 py-4 group hover:bg-[#009AFE]/5 transition-colors duration-200"
+                    data-testid={`spec-item-${spec.label.toLowerCase().replace(/\s+/g, '-')}`}
+                  >
+                    <div className="flex items-center gap-3 text-muted-foreground">
+                      <span className="text-[#009AFE] group-hover:drop-shadow-[0_0_6px_rgba(0,154,254,0.7)] transition-all duration-200">{spec.icon}</span>
+                      <span className="text-sm font-medium uppercase tracking-wider">{spec.label}</span>
+                    </div>
+                    <span className="text-sm font-semibold text-white text-right max-w-[55%]">{spec.value}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Infrastructure */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6 }}
+              className="flex flex-col gap-6"
+            >
+              {/* Network */}
+              <div className="rounded-2xl bg-card border border-border/50 p-6 group hover:border-[#009AFE]/40 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#009AFE]/0 group-hover:from-[#009AFE]/5 to-transparent transition-all duration-500" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 rounded-lg bg-[#009AFE]/10 text-[#009AFE]">
+                      <Wifi className="h-5 w-5" />
+                    </div>
+                    <h3 className="text-lg font-bold text-white">Triple ISP Network</h3>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    We run <span className="text-white font-semibold">3 independent ISPs</span> simultaneously through a hardware load balancer. Traffic is intelligently distributed across all three connections so you never hit a bottleneck.
+                  </p>
+                  <div className="grid grid-cols-3 gap-3">
+                    {["ISP 1", "ISP 2", "ISP 3"].map((isp, i) => (
+                      <div key={i} className="rounded-lg bg-background border border-border/50 px-3 py-2 text-center" data-testid={`infra-${isp.toLowerCase().replace(' ', '')}`}>
+                        <div className="flex items-center justify-center gap-1.5 mb-1">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#009AFE] animate-pulse" />
+                          <span className="text-xs font-semibold text-white">{isp}</span>
+                        </div>
+                        <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Active</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#009AFE] bg-[#009AFE]/10 px-3 py-1.5 rounded-full border border-[#009AFE]/20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#009AFE]" /> Zero Packet Loss
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#009AFE] bg-[#009AFE]/10 px-3 py-1.5 rounded-full border border-[#009AFE]/20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#009AFE]" /> Minimal Ping
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Power Backup */}
+              <div className="rounded-2xl bg-card border border-border/50 p-6 group hover:border-[#009AFE]/40 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#009AFE]/0 group-hover:from-[#009AFE]/5 to-transparent transition-all duration-500" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 rounded-lg bg-[#009AFE]/10 text-[#009AFE]">
+                      <Zap className="h-5 w-5" />
+                    </div>
+                    <h3 className="text-lg font-bold text-white">Power Backup</h3>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Full power backup keeps every rig, screen, and peripheral <span className="text-white font-semibold">running for hours</span> during an outage. Your session never ends early — even when the city lights go out.
+                  </p>
+                  <div className="mt-4 flex items-center gap-3 p-3 rounded-lg bg-background border border-border/50" data-testid="infra-power-backup">
+                    <Zap className="h-4 w-4 text-[#009AFE] shrink-0" />
+                    <span className="text-xs text-muted-foreground">Uninterrupted backup power — hours of runtime on full load</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
