@@ -57,9 +57,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2" data-testid="link-home">
-            <span className="text-xl font-bold tracking-tighter text-white">
-              ARK8 <span className="text-[#009AFE]">GAMING</span>
-            </span>
+            <img src="/logo.png" alt="ARK8 Gaming" className="h-10 w-auto" />
           </a>
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
@@ -98,9 +96,12 @@ export default function Home() {
             variants={containerVariants}
             className="max-w-4xl mx-auto space-y-8"
           >
-            <motion.div variants={itemVariants} className="inline-flex items-center rounded-full border border-[#009AFE]/30 bg-[#009AFE]/10 px-3 py-1 text-sm font-medium text-[#009AFE] backdrop-blur-sm">
-              <span className="flex h-2 w-2 rounded-full bg-[#009AFE] mr-2 animate-pulse" />
-              Chennai's Premier Esports Arena
+            <motion.div variants={itemVariants} className="flex flex-col items-center gap-3">
+              <img src="/logo.png" alt="ARK8 Gaming" className="h-20 w-auto drop-shadow-[0_0_20px_rgba(0,154,254,0.5)]" />
+              <div className="inline-flex items-center rounded-full border border-[#009AFE]/30 bg-[#009AFE]/10 px-3 py-1 text-sm font-medium text-[#009AFE] backdrop-blur-sm">
+                <span className="flex h-2 w-2 rounded-full bg-[#009AFE] mr-2 animate-pulse" />
+                A Home for Gamers, Built by Gamers
+              </div>
             </motion.div>
             
             <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-none">
@@ -460,9 +461,8 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-3 gap-12 items-start">
             <div className="space-y-4">
-              <span className="text-2xl font-bold tracking-tighter text-white">
-                ARK8 <span className="text-[#009AFE]">GAMING</span>
-              </span>
+              <img src="/logo.png" alt="ARK8 Gaming" className="h-12 w-auto" />
+              <p className="text-sm font-medium text-[#009AFE]">A Home for Gamers, Built by Gamers.</p>
               <p className="text-sm text-muted-foreground max-w-xs">
                 The ultimate competitive and casual gaming destination in Chennai. Play harder.
               </p>
