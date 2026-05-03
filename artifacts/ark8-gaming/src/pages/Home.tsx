@@ -472,8 +472,20 @@ export default function Home() {
               <h4 className="font-semibold text-white">Location & Hours</h4>
               <ul className="space-y-3">
                 <li className="flex items-start text-sm text-muted-foreground">
-                  <MapPin className="h-5 w-5 text-[#009AFE] mr-3 shrink-0" />
-                  <span>Near SRM University<br />Kattankulathur, Chennai<br />Tamil Nadu 603203</span>
+                  <MapPin className="h-5 w-5 text-[#009AFE] mr-3 shrink-0 mt-0.5" />
+                  <span>No. 3/116, Potheri Main Road<br />Potheri, Kattankulathur<br />Chennai, Tamil Nadu 603203<br />(Near SRM University Main Gate)</span>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/c2MdCmsJJ1vgRJde9"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-testid="link-get-directions"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#009AFE] border border-[#009AFE]/40 bg-[#009AFE]/10 hover:bg-[#009AFE]/20 px-4 py-2 rounded-lg transition-colors duration-200"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    Get Directions
+                  </a>
                 </li>
                 <li className="flex items-center text-sm text-muted-foreground">
                   <Clock className="h-5 w-5 text-[#009AFE] mr-3 shrink-0" />
