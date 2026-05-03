@@ -1,0 +1,70 @@
+That is a perfect color for a gaming aesthetic—it’s energetic, modern, and pops brilliantly against a dark background.
+
+Here is the updated prompt for Replit, integrating your specific brand color and tweaking the features to reflect a top-tier competitive setup.
+
+The Updated Replit Prompt
+Act as an expert web developer and UI/UX designer. I need you to build a complete, responsive, and modern landing page for my gaming cafe, "ARK8 Gaming."
+
+Context & Brand Identity:
+
+Name: ARK8 Gaming
+
+Location: Chennai, Tamil Nadu (near SRM University). Target audience: College students, esports enthusiasts, and hardcore gamers.
+
+Vibe: Modern, premium gaming aesthetic. The core theme must be a sleek dark mode (deep blacks and charcoal grays). Crucially, you must use the exact hex code #009AFE as the primary accent color for buttons, glowing effects, neon text highlights, and borders.
+
+Social Proof: Integrate my Instagram heavily. Link: https://www.instagram.com/ark8gaming/
+
+Please include the following sections in a single-page scrolling layout:
+
+1. Hero Section:
+
+A bold, impactful headline (e.g., "Level Up Your Game at ARK8"). Use a subtle #009AFE glow effect on the main text.
+
+A dynamic background (a dark, high-quality gaming setup placeholder image or subtle animated dark gradient).
+
+Two Call-to-Action (CTA) buttons: "View Pricing" (Solid #009AFE background) and "Follow Us on Instagram" (Outlined with #009AFE).
+
+2. About Us / Location:
+
+A short paragraph explaining that we are the premier gaming destination near SRM University, Chennai.
+
+Highlight the community aspect and our premium atmosphere.
+
+3. The Arsenal (Features):
+
+Create a sleek grid or card layout highlighting our hardware. Include these specific selling points:
+
+Pro-Tier Displays: Lightning-fast 320Hz monitors for zero-latency competitive play.
+
+High-End PC Rigs: Premium GPUs and hardware for maximum frames.
+
+Console Lounge: The ultimate chill zone for controller players.
+
+Fuel & Grub: Snacks and beverages to keep the grind going.
+
+Apply a subtle #009AFE hover effect to these feature cards.
+
+4. Pricing / Passes:
+
+A clean pricing table with 3 tiers (e.g., "Hourly Rate," "3-Hour Gamer Pass," "All-Day Grind"). Use placeholder prices in INR (₹). Highlight the middle tier with a #009AFE border to make it stand out.
+
+5. Footer & Contact:
+
+Address: "Near SRM University, Chennai, Tamil Nadu."
+
+A prominent Instagram button linking to https://www.instagram.com/ark8gaming/
+
+Operating hours (placeholder).
+
+Technical Requirements:
+
+Build this using standard web technologies (HTML, CSS, JavaScript) OR React/Next.js.
+
+Make sure it is 100% mobile-responsive.
+
+Use a modern framework like Tailwind CSS for styling. Ensure the custom color #009AFE is properly configured in the Tailwind theme settings.
+
+Include smooth scrolling and sleek animations.
+
+Please generate the full project files so I can preview the website immediately.

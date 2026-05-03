@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "-xbNkDU4fr5fuqlopYQ2-"
+uri = "file://artifacts/ark8-gaming/public/hero.png"
+type = "image"
+title = "Hero gaming setup background"
+
+[[generated]]
+id = "yQGRjh5Hy57CPmDvba4Vq"
+uri = "file://artifacts/ark8-gaming/public/about.png"
+type = "image"
+title = "Atmospheric gaming cafe interior"
