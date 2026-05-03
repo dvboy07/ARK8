@@ -264,8 +264,8 @@ export default function Home() {
                   <ChevronRight className="h-4 w-4 text-[#009AFE] mr-2" /> Access to PC & Console
                 </li>
               </ul>
-              <Button variant="outline" className="w-full border-border hover:bg-white/5">
-                Drop In
+              <Button asChild variant="outline" className="w-full border-border hover:bg-white/5">
+                <a href="https://wa.me/919962103426?text=Hi%20ARK8%20Gaming!%20I'd%20like%20to%20book%20an%20hourly%20session." target="_blank" rel="noreferrer" data-testid="button-pricing-dropin">Drop In</a>
               </Button>
             </motion.div>
 
@@ -295,8 +295,8 @@ export default function Home() {
                   <ChevronRight className="h-4 w-4 text-[#009AFE] mr-2" /> 10% off snacks
                 </li>
               </ul>
-              <Button className="w-full bg-[#009AFE] hover:bg-[#0080D6] text-white font-semibold">
-                Lock It In
+              <Button asChild className="w-full bg-[#009AFE] hover:bg-[#0080D6] text-white font-semibold">
+                <a href="https://wa.me/919962103426?text=Hi%20ARK8%20Gaming!%20I'd%20like%20to%20book%20the%203-Hour%20Gamer%20Pass." target="_blank" rel="noreferrer" data-testid="button-pricing-lockin">Lock It In</a>
               </Button>
             </motion.div>
 
@@ -323,8 +323,8 @@ export default function Home() {
                   <ChevronRight className="h-4 w-4 text-[#009AFE] mr-2" /> Free energy drink
                 </li>
               </ul>
-              <Button variant="outline" className="w-full border-border hover:bg-white/5">
-                Go All Out
+              <Button asChild variant="outline" className="w-full border-border hover:bg-white/5">
+                <a href="https://wa.me/919962103426?text=Hi%20ARK8%20Gaming!%20I'd%20like%20to%20book%20the%20All-Day%20Grind%20pass." target="_blank" rel="noreferrer" data-testid="button-pricing-allday">Go All Out</a>
               </Button>
             </motion.div>
           </div>
