@@ -314,8 +314,8 @@ export default function Home() {
                     We run <span className="text-white font-semibold">3 independent ISPs</span> simultaneously through a hardware load balancer. Traffic is intelligently distributed across all three connections so you never hit a bottleneck.
                   </p>
                   <div className="grid grid-cols-3 gap-3">
-                    {["ISP 1", "ISP 2", "ISP 3"].map((isp, i) => (
-                      <div key={i} className="rounded-lg bg-background border border-border/50 px-3 py-2 text-center" data-testid={`infra-${isp.toLowerCase().replace(' ', '')}`}>
+                    {["ACT Fibernet", "Jio Fiber", "Airtel Fiber"].map((isp, i) => (
+                      <div key={i} className="rounded-lg bg-background border border-border/50 px-3 py-2 text-center" data-testid={`infra-${isp.toLowerCase().replace(/\s+/g, '-')}`}>
                         <div className="flex items-center justify-center gap-1.5 mb-1">
                           <span className="w-1.5 h-1.5 rounded-full bg-[#009AFE] animate-pulse" />
                           <span className="text-xs font-semibold text-white">{isp}</span>
