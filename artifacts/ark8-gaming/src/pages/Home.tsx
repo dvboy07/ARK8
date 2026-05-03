@@ -89,7 +89,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="container relative z-20 px-4 md:px-6 text-center">
+        <div className="container mx-auto relative z-20 px-4 md:px-6 text-center">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -119,7 +119,7 @@ export default function Home() {
             
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Button asChild size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-[#009AFE] hover:bg-[#0080D6] text-white shadow-[0_0_20px_rgba(0,154,254,0.4)] hover:shadow-[0_0_30px_rgba(0,154,254,0.6)] transition-all duration-300">
-                <a href="#pricing" data-testid="button-hero-pricing">View Passes</a>
+                <a href="#pricing" data-testid="button-hero-pricing">View Plans</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-base border-[#009AFE] text-[#009AFE] hover:bg-[#009AFE]/10 bg-transparent">
                 <a href="https://www.instagram.com/ark8gaming/" target="_blank" rel="noreferrer" data-testid="button-hero-instagram">
@@ -134,7 +134,7 @@ export default function Home() {
 
       {/* About / Location */}
       <section id="about" className="py-24 relative bg-background">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
@@ -159,7 +159,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Built For <span className="text-[#009AFE]">Gamers</span>.</h2>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">A Home for Gamers, <span className="text-[#009AFE]">Built by Gamers</span>.</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Located right near SRM University in Chennai, ARK8 Gaming is more than just a cafe — it's a community hub for hardcore gamers and esports enthusiasts. 
               </p>
@@ -186,7 +186,7 @@ export default function Home() {
       <section id="arsenal" className="py-24 bg-card/50 relative border-y border-border/50">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,154,254,0.05)_0%,transparent_50%)]" />
         
-        <div className="container px-4 md:px-6 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">The <span className="text-[#009AFE]">Arsenal</span></h2>
             <p className="text-lg text-muted-foreground">Uncompromising hardware for those who take gaming seriously.</p>
@@ -240,7 +240,7 @@ export default function Home() {
       {/* PC Specs */}
       <section id="specs" className="py-24 relative bg-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,154,254,0.06)_0%,transparent_50%)]" />
-        <div className="container px-4 md:px-6 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -362,7 +362,7 @@ export default function Home() {
 
       {/* Pricing */}
       <section id="pricing" className="py-24 relative bg-background">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Choose Your <span className="text-[#009AFE]">Session</span></h2>
             <p className="text-lg text-muted-foreground">Straightforward pricing. No hidden fees. Just pure gaming.</p>
@@ -458,7 +458,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-card border-t border-border py-12 md:py-16">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-3 gap-12 items-start">
             <div className="space-y-4">
               <img src="/logo.png" alt="ARK8 Gaming" className="h-12 w-auto" />
