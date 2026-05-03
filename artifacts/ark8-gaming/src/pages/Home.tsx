@@ -97,7 +97,7 @@ export default function Home() {
             className="max-w-4xl mx-auto space-y-8"
           >
             <motion.div variants={itemVariants} className="flex flex-col items-center gap-3">
-              <img src="/logo.png" alt="ARK8 Gaming" className="h-20 w-auto drop-shadow-[0_0_20px_rgba(0,154,254,0.5)]" />
+              <img src="/logo.png" alt="ARK8 Gaming" className="h-32 w-auto drop-shadow-[0_0_20px_rgba(0,154,254,0.5)]" />
               <div className="inline-flex items-center rounded-full border border-[#009AFE]/30 bg-[#009AFE]/10 px-3 py-1 text-sm font-medium text-[#009AFE] backdrop-blur-sm">
                 <span className="flex h-2 w-2 rounded-full bg-[#009AFE] mr-2 animate-pulse" />
                 A Home for Gamers, Built by Gamers
