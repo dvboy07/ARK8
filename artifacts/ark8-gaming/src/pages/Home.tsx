@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Monitor, Cpu, Gamepad2, Coffee, ChevronRight, Instagram, MapPin, Clock, HardDrive, MemoryStick, Keyboard, MousePointer2, Wifi, Zap } from "lucide-react";
+import { Monitor, Cpu, Gamepad2, Coffee, ChevronRight, Instagram, MapPin, Clock, HardDrive, MemoryStick, Keyboard, MousePointer2, Wifi, Zap, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -473,7 +473,7 @@ export default function Home() {
               <ul className="space-y-3">
                 <li className="flex items-start text-sm text-muted-foreground">
                   <MapPin className="h-5 w-5 text-[#009AFE] mr-3 shrink-0 mt-0.5" />
-                  <span>No. 3/116, Potheri Main Road<br />Potheri, Kattankulathur<br />Chennai, Tamil Nadu 603203<br />(Near SRM University Main Gate)</span>
+                  <span>#19, First Floor, Kakkan St<br />Kattankulathur<br />Tamil Nadu 603203<br />(Near SRM University)</span>
                 </li>
                 <li>
                   <a
@@ -486,6 +486,10 @@ export default function Home() {
                     <MapPin className="h-4 w-4" />
                     Get Directions
                   </a>
+                </li>
+                <li className="flex items-center text-sm text-muted-foreground">
+                  <Phone className="h-5 w-5 text-[#009AFE] mr-3 shrink-0" />
+                  <a href="tel:+919962103426" className="hover:text-white transition-colors" data-testid="link-phone">+91 99621 03426</a>
                 </li>
                 <li className="flex items-center text-sm text-muted-foreground">
                   <Clock className="h-5 w-5 text-[#009AFE] mr-3 shrink-0" />
